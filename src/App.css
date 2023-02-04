@@ -1,38 +1,153 @@
-.App {
+.d-flexcenter{
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #FFC107;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar a {
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 20px;
+}
+
+.navbar a:hover {
+  background-color: #FF9800;
+  color: #fff;
+}
+
+.navbar a.active {
+  background-color: #E64A19;
+  color: #fff;
+}
+
+.section {
+  padding: 60px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* padding: 20px; */
+  width: 50%;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.section p {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+.cta-button {
+  background-color: #333;
+  color: #FFF;
+  padding: 20px 40px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.backgroundimg{
+  /* background-image: url(path/to/your/background-image.jpg); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.contact-form {
+  background-color: #F5F5F5;
+  padding: 60px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.contact-form h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  border: 1px solid #DDD;
+}
+
+.testimonials {
+  background-color: #FFF9C4;
+  padding: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.testimonials p {
+  font-size: 18px;
+  margin-bottom: 60px;
+  font-style: italic;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+  /* padding: 20px; */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.dummy-background {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.dummy-background:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: all 0.3s ease-out;
+}
+@media only screen and (max-width: 768px) {
+  .contact-form {
+    width: 70%;
   }
 }
+
